@@ -73,12 +73,12 @@ class ElasticsearchSearchBackend(BaseSearchBackend):
                 "tokenizer": {
                     "haystack_ngram_tokenizer": {
                         "type": "nGram",
-                        "min_gram": 3,
+                        "min_gram": 1,
                         "max_gram": 15,
                     },
                     "haystack_edgengram_tokenizer": {
                         "type": "edgeNGram",
-                        "min_gram": 2,
+                        "min_gram": 1,
                         "max_gram": 15,
                         "side": "front"
                     }
@@ -91,7 +91,7 @@ class ElasticsearchSearchBackend(BaseSearchBackend):
                     },
                     "haystack_edgengram": {
                         "type": "edgeNGram",
-                        "min_gram": 2,
+                        "min_gram": 1,
                         "max_gram": 15
                     }
                 }
